@@ -48,13 +48,15 @@ services:
 # Определяем переменные в контейнере
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-#      MYSQL_USER: ${MYSQL_USER}
-#      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
-#      MYSQL_DATABASE: ${MYSQL_DATABASE}
+    #  MYSQL_USER: ${MYSQL_USER}
+    #  MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
     command: --init-file /tmp/init.sql
     volumes:
       - ./db/init.sql:/tmp/init.sql
       - ./db/mysql/:/var/lib/mysql/
+      - ./db/my.cnf:/etc/mysql/my.cnf:ro
+      - ./logs/mysql/:/var/log/mysql/
 # Раскомментировать, если открываем порт:
     #ports:
     #  - '3306:3306'
