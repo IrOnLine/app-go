@@ -1,0 +1,7 @@
+# Базовый образ приложения
+
+FROM mariadb:latest
+
+COPY ./db/init.sql /tmp
+
+CMD [ "mysqld", "--init-file=/tmp/init.sql" ]

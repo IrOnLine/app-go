@@ -1,0 +1,43 @@
+# Базовый образ приложения
+# FROM golang:alpine3.16 AS build
+# FROM golang:1.14-alpine AS build
+FROM golang:1.20-alpine AS build
+
+
+# Обновляем репозитории и устанавливаем git
+RUN apk update && apk upgrade && \
+    apk add --no-cache git
+
+# Switches to /tmp/app as the working directory, similar to 'cd'
+WORKDIR /tmp/app
+
+## Раскомментировать если в проекте есть go.mod и go.sum
+
+COPY go.mod .
+# COPY go.sum .
+# RUN go mod download
+
+# Копируем код из локального контекста в рабочую директорию образа
+COPY ./go/src .
+
+# Собираем текущий проект в бинарный файл api расположенный в /tmp/app/out/api
+RUN GOOS=linux go build -o ./out/api .
+
+#########################################################
+
+FROM alpine:latest
+
+# Adds CA Certificates to the image
+RUN apk add ca-certificates
+
+# Копируем двоичный файл из контейнера BUILD в папку /app
+COPY --from=build /tmp/app/out/api /app/api
+
+# Switches working directory to /app
+WORKDIR "/app"
+
+# Открываем порт 5000 в контейнере
+EXPOSE 5000
+
+# Runs the binary once the container starts
+CMD ["./api"]

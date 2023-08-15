@@ -1,0 +1,128 @@
+# !!! --compatibility  для запуска реплик !!!
+# docker-compose --compatibility up -d
+version: '3.9'
+
+# Определяем сеть
+networks:
+  irol-network:
+
+volumes:
+  irol_db:
+
+# Define services/containers
+services:
+# api is the container name for our Go API
+  api:
+# It will look for a dockerfile in the project root and build it
+    build:
+# Контекст для сборки образа
+      context:  .
+# Имя докерфайла из которого будет собран образ
+      dockerfile: Dockerfile-go    
+# Exposes the port 5000 from a container and binds it to a random port
+    ports:
+      - "5000"
+# Перезапускать контейнер всегда
+    restart: "always"
+# Соединяем API к сети irol-network bridge
+    networks: 
+      - irol-network
+# Запускаем экземпляры образа (5)
+    deploy:
+      replicas: 5
+    depends_on:
+      - mariadb
+      
+# Создаём контейнер MariaDB
+  mariadb:
+# Используем образ mariadb
+    image: mariadb:latest
+    container_name: mariadb
+# Перезапускать контейнер всегда
+    # restart: always
+    # Перезапускать контейнер только в том случае, если он завершается с ненулевым кодом
+    restart: "on-failure"
+# Соединяемся с сетью "irol-network"
+    networks:
+      - irol-network
+# Определяем переменные в контейнере
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+#      MYSQL_USER: ${MYSQL_USER}
+#      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+#      MYSQL_DATABASE: ${MYSQL_DATABASE}
+    command: --init-file /tmp/init.sql
+    volumes:
+      - ./db/init.sql:/tmp/init.sql
+      - ./db/mysql/:/var/lib/mysql/
+    # Раскоментировать, если открываем порт:
+    #ports:
+    #  - '3306:3306'
+
+# Создаём контейнер phpMyAdmin
+  phpmyadmin:
+# Используем образ phpMyAdmin
+    image: phpmyadmin:latest 
+    container_name: phpmyadmin
+# Перезапускать контейнер только в том случае, если он завершается с ненулевым кодом
+    restart: "on-failure"
+# Соединяем с сетью "irol-network"
+    networks:
+      - irol-network
+# Передаём список переменных среды в контейер
+    environment:
+#      PMA_ARBITRARY: 1 # при значении 1 можем подключиться к произвольному серверу
+      PMA_HOST: mariadb
+#      PMA_PORT: 3306
+#      PMA_USER: ${MYSQL_USER}
+#      PMA_PASSWORD: ${MYSQL_PASSWORD}
+      PMA_ABSOLUTE_URI: ${ABSOLUTE_URI}/pma/
+      UPLOAD_LIMIT: 1024M
+      MEMORY_LIMIT: 1024M
+      MAX_EXECUTION_TIME: 300
+    # Ждём, пока контейнер запустится
+    depends_on:
+      - mariadb
+
+# Соединяем ./nginx/nginx.conf файл в нашей папке с /etc/nginx/nginx.conf в контейнере
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl
+# Ждём, пока контейнер api запустится
+
+# Создаём контейнер NGINX
+  nginx:
+    # specifies the latest nginx image
+    image: nginx:stable-alpine
+    restart: unless-stopped
+    container_name: nginx
+# Соединяем ./nginx/nginx.conf файл в нашей папке с /etc/nginx/nginx.conf в контейнере
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+# отключаем certbot 
+#      - ./certbot/conf:/etc/letsencrypt
+#      - ./certbot/www:/var/www/certbot
+# монтируем свои сертификаты 
+      - ./nginx/ssl:/etc/nginx/ssl
+#      
+      - ./logs/nginx:/var/log/nginx
+# Ждём, пока контейнер api запустится
+    depends_on: 
+      - api
+# Сопоставляем порт 80 на хосте с портом 80 внутри nginx контейнера
+# Синтаксис: "HOST_PORT:CONTAINER_PORT"
+    ports: 
+      - 80:80
+      - 443:443
+    networks: 
+      - irol-network
+    command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
+
+# отключаем certbot 
+#  certbot:
+#    image: certbot/certbot
+#    restart: unless-stopped
+#    volumes:
+#      - ./certbot/conf:/etc/letsencrypt
+#      - ./certbot/www:/var/www/certbot
+#    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
