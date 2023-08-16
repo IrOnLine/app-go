@@ -1,25 +1,37 @@
 package main
 
 import (
-	"fmt"
-	"log"
-	"net/http"
+  "fmt"
+
+  "github.com/gin-gonic/gin"
+  "github.com/sirupsen/logrus"
+  "myapi/config"
+  "myapi/routes"
 )
 
-// handleHello GET /hello
-func handleHello(w http.ResponseWriter, r *http.Request) {
-
-	log.Println(r.Method, r.RequestURI)
-
-	// Returns hello world! as a response
-	fmt.Fprintln(w, "Hello world!")
-}
+// Initialize logger
+var log = logrus.New()
 
 func main() {
-	// registers handleHello to GET /hello
-	http.HandleFunc("/hello", handleHello)
-	// starts the server on port 5000
-	if err := http.ListenAndServe(":5000", nil); err != nil {
-		log.Fatalln(err)
+
+	// Load config
+	config.Load()
+	
+	// Initialize database
+	db, err := config.Database()
+	if err != nil {
+	  log.Fatal(err)
 	}
-}
+  
+	// Initialize router
+	router := gin.Default()
+  
+	// Register routes
+	routes.Register(router)
+  
+	// Start server
+	log.Info("Starting server on port 8000")
+	if err := router.Run(":8000"); err != nil {
+	  log.Fatal(err)
+	}
+  }

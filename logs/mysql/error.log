@@ -126,3 +126,5 @@ Version: '11.0.3-MariaDB-1:11.0.3+maria~ubu2204-log'  socket: '/run/mysqld/mysql
 2023-08-15 21:44:13 0 [Note] InnoDB: Shutdown completed; log sequence number 66042; transaction id 62
 2023-08-15 21:44:13 0 [Note] mariadbd: Shutdown complete
 
+2023-08-16 10:45:29 0 [Warning] mariadbd: io_uring_queue_init() failed with ENOSYS: check seccomp filters, and the kernel version (newer than 5.1 required)
+2023-08-16 10:45:29 0 [Warning] InnoDB: liburing disabled: falling back to innodb_use_native_aio=OFF
