@@ -36,78 +36,75 @@ https://localhost/pma
 Описательные комментарии для каждого шага Соответствующие ответы на ошибки для каждого случая отказа
 
 /main.go
-Key points:
-Wrap initialization steps like loading .env and logger in error checks
-Catch database connection error
-Register custom error handling middleware
-Log startup and shutdown messages
-Return non-zero exit code on failures
-This ensures:
-
-Errors do not get ignored silently
-Server process exits if it cannot start up properly
-Custom middleware can handle errors centrally
-Clean startup and shutdown with logging
+#(!)
+Оберните шаги инициализации, такие как загрузка .env и логгера, в проверки ошибок
+Перехват ошибок подключения к базе данных
+Регистрация пользовательского промежуточного ПО для обработки ошибок
+Регистрировать сообщения о запуске и завершении работы
+Возвращать ненулевой код выхода при ошибках
+Это гарантирует:
+- Ошибки не игнорируются втихую
+- Серверный процесс завершается, если он не может запуститься должным образом
+- Пользовательское промежуточное ПО может централизованно обрабатывать ошибки
+- Чистый запуск и завершение работы с протоколированием
 
 config/config.go
-Key points:
-Return errors instead of logging/panic
-Wrap errors with context using fmt.Errorf
-Ping raw database handle to validate connection
-Load() validates required env vars
-All errors bubbled up to caller
-This ensures any issues initializing config are surfaced instead of failing silently.
+#(!)
+Возвращать ошибки вместо логирования/паники
+Обернуть ошибки контекстом с помощью fmt.Errorf
+Пинговать необработанный хэндл базы данных для проверки соединения
+Load() проверяет необходимые env-вары
+Все ошибки передаются вызывающей стороне.
+Это гарантирует, что любые проблемы с инициализацией конфигурации будут выявлены, а не завершится молчанием.
 
 handlers/handlers.go
-Key points:
-Handle DB errors by aborting with 5xx status
-Handle validation errors with 4xx status
-Bubble errors up to caller instead of logging
-Set global DB handle for simplified handlers
-This allows robust error handling without complex nested blocks.
+#(!)
+Обработка ошибок БД путем прерывания со статусом 5xx
+Обработка ошибок валидации с помощью статуса 4xx
+Выдавать ошибки вызывающей стороне вместо протоколирования
+Устанавливать глобальный хэндл БД для упрощенных обработчиков.
+Это позволяет обеспечить надежную обработку ошибок без сложных вложенных блоков.
 
 middleware/middleware.go
-Key points:
-Auth middleware returns 401 Unauthorized on error
-ErrorHandler catches errors and returns 500 Internal Server Error
-Helper validates token and returns error
-Errors bubbled up instead of logging
-This allows centralized error handling without complex error checks.
+#(!)
+Промежуточное ПО Auth возвращает ошибку 401 Unauthorized
+ErrorHandler перехватывает ошибки и возвращает 500 Internal Server Error
+Хелпер проверяет токен и возвращает ошибку
+Ошибки выводятся на экран вместо логирования
+Это позволяет централизованно обрабатывать ошибки без сложных проверок.
 
 models/models.go
-Key points:
-Input validation before interacting with DB
-Return errors instead of logging/panic
-Wrap raw DB errors with context
-Handle DB "not found" error separately
-This moves error handling closer to the logic while maintaining clean signatures.
+#(!)
+Валидация ввода перед взаимодействием с БД
+Возврат ошибок вместо логирования/паники
+Обернуть необработанные ошибки БД контекстом
+Отдельно обрабатывать ошибку "не найдено" в БД.
+Это позволяет приблизить обработку ошибок к логике, сохраняя при этом чистоту сигнатур.
 
 routes/routes.go
-The key points are:
-Handler functions return errors instead of handling
-AbortWithError to return errors to client
-Input validation before business logic
-Errors bubbled up from helpers like JWT generation
-This centralizes error handling in middleware.
+#(!)
+Функции-обработчики возвращают ошибки вместо обработки
+AbortWithError для возврата ошибок клиенту
+Валидация ввода перед бизнес-логикой
+Ошибки передаются от вспомогательных функций, таких как генерация JWT.
+Это позволяет централизовать обработку ошибок в промежуточном ПО.
 
 utils/jwt.go
-Key points:
-
-Custom error types for common failures
-GenerateToken returns error instead of panicking
-ValidateToken returns structured error
-Errors handled by caller instead of within
-This leads to clean composable token handling functions.
+#(!)
+Пользовательские типы ошибок для распространенных сбоев
+GenerateToken возвращает ошибку вместо паники
+ValidateToken возвращает структурированную ошибку
+Ошибки обрабатываются вызывающей стороной, а не внутри
+Это приводит к созданию чистых композитных функций обработки токенов.
 
 utils/logger.go
-Key points:
-
-Custom error for init failure
-Set global Log instance
-Helper methods add context to log calls
-Handle config errors instead of panicking
-Return errors to caller
-This allows handling logger errors gracefully and using it cleanly.
+#(!)
+Пользовательская ошибка при сбое инициализации
+Установка глобального экземпляра журнала
+Вспомогательные методы добавляют контекст к вызовам журнала
+Обработка ошибок конфигурации вместо паники
+Возвращать ошибки вызывающей стороне
+Это позволяет изящно обрабатывать ошибки логгера и чисто использовать его.
 
 
 ## License

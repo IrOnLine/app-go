@@ -11,12 +11,12 @@ WORKDIR /tmp/app
 
 ## Раскомментировать если в проекте есть go.mod и go.sum
 
-COPY ./go/go.mod .
+COPY ./app/go.mod .
 # COPY go.sum .
 # RUN go mod download
 
 # Копируем код из локального контекста в рабочую директорию образа
-COPY ./go .
+COPY ./app .
 
 # Собираем текущий проект в бинарный файл api расположенный в /tmp/app/out/api
 RUN GOOS=linux go build -o ./out/api .
