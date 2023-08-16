@@ -9,44 +9,48 @@ import (
   "gorm.io/gorm"
 )
 
-// Load loads environment variables and validates required ones exist
-func Load() {
-	// Load .env file
-	if err := godotenv.Load(); err != nil {
-	  log.Fatal("Error loading .env file")
-	}
-  
-	// Validate required environment variables
-	requiredVars := []string{"DB_HOST", "DB_USER", "DB_PASSWORD"}
-	
-	for _, v := range requiredVars {
-	  if os.Getenv(v) == "" {
-		log.Fatal("Required environment variable not set: " + v) 
-	  }
-	}
+// Load loads environment variables and validators
+func Load() error {
+
+  if err := godotenv.Load(); err != nil {
+    return fmt.Errorf("error loading .env file: %v", err)
   }
+
+  requiredVars := []string{"DB_HOST", "DB_USER", "DB_PASS"}
   
-  // Database connects to DB and validates connection
-  func Database() (*gorm.DB, error) {
-  
-	// Build DSN
-	dsn := fmt.Sprintf("user=%s password=%s host=%s port=%s dbname=%s",
-	  os.Getenv("DB_USER"), 
-	  os.Getenv("DB_PASSWORD"),
-	  os.Getenv("DB_HOST"), 
-	  os.Getenv("DB_PORT"),
-	  os.Getenv("DB_NAME"))
-  
-	// Open database connection
-	db, err := gorm.Open(mysql.Open(dsn))
-	if err != nil {
-	  return nil, err 
-	}
-  
-	// Validate database connection
-	if err = db.Ping(); err != nil {
-	  return nil, errors.New("Failed to connect to database")
-	}
-  
-	return db, nil
+  for _, v := range requiredVars {
+    if os.Getenv(v) == "" {
+      return fmt.Errorf("required env var not defined: %s", v)
+    }
   }
+
+  return nil
+}
+
+// ConnectDB creates a database connection
+func ConnectDB() (*gorm.DB, error) {
+  
+  dsn := fmt.Sprintf("%s:%s@tcp(%s)/%s?charset=utf8&parseTime=True&loc=Local",
+    os.Getenv("DB_USER"),
+    os.Getenv("DB_PASS"),
+    os.Getenv("DB_HOST"),
+    os.Getenv("DB_NAME"),
+  ) 
+   
+  db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
+  if err != nil {
+    return nil, fmt.Errorf("failed to connect to db: %v", err)
+  }
+
+  sqldb, err := db.DB()
+  if err != nil {
+    return nil, fmt.Errorf("failed to get raw database handle: %v", err) 
+  }
+
+  if err := sqldb.Ping(); err != nil {
+    return nil, fmt.Errorf("failed to ping database: %v", err)
+  }
+
+  return db, nil
+
+}

@@ -2,18 +2,64 @@ package routes
 
 import (
   "github.com/gin-gonic/gin"
-  
-  "myapi/handlers"
+
+  "myapp/handlers"
+  "myapp/middleware"
 )
 
-// Register registers routes to router
-func Register(router *gin.Engine) {
-  api := router.Group("/api/v1")
+// RegisterRoutes sets up API routes
+func RegisterRoutes(r *gin.Router) {
+
+  // Public routes
+  r.POST("/login", loginHandler)
+
+  // Private routes
+  api := r.Group("/api")
+  api.Use(middleware.AuthRequired)
   {
     api.GET("/users", handlers.GetUsers)
     api.POST("/users", handlers.CreateUser)
-    api.GET("/users/:id", handlers.GetUser)
-    api.PUT("/users/:id", handlers.UpdateUser)
-    api.DELETE("/users/:id", handlers.DeleteUser)
   }
+
+}
+
+// Login handler
+func loginHandler(c *gin.Context) {
+
+  // Bind input
+  var input LoginInput
+  if err := c.ShouldBindJSON(&input); err != nil {
+    c.AbortWithError(400, err)
+    return
+  }
+
+  // Validate input
+  if !validateLoginInput(input) {
+    c.AbortWithStatusJSON(400, gin.H{"error": "Invalid login credentials"})
+    return
+  }
+
+  // Generate JWT
+  token, err := generateJWT(input.Username)
+  if err != nil {
+    c.AbortWithError(500, err)
+    return
+  }
+
+  c.JSON(200, gin.H{"token": token})
+}
+
+// Input validation
+func validateLoginInput(input LoginInput) bool {
+  // ...
+
+  return true // or false
+} 
+
+// Generate JWT
+func generateJWT(username string) (string, error) {
+
+  // Generate JWT
+  
+  return token, nil // or error
 }

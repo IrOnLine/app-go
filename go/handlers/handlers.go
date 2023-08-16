@@ -4,75 +4,62 @@ import (
   "net/http"
 
   "github.com/gin-gonic/gin"
-
-  "myapi/models"
+  "gorm.io/gorm"
 )
 
-/// GetUsers fetches users from database
+// Global database handle 
+var DB *gorm.DB
+
+// SetDB sets the database handle
+func SetDB(db *gorm.DB) {
+  DB = db
+}
+
+// GetUsers handles GET /users route
 func GetUsers(c *gin.Context) {
 
-	// Get users from database
-	var users []User
-	if result := db.Find(&users); result.Error != nil {
-	  // Handle error
-	  c.AbortWithStatusJSON(http.StatusInternalServerError, gin.H{"error": "Failed to fetch users"})
-	  log.Error(result.Error)
-	  return
-	}
-  
-	// Return response
-	c.JSON(http.StatusOK, users)
+  var users []User
+  result := DB.Find(&users)
+  if result.Error != nil {
+    c.AbortWithStatusJSON(http.StatusInternalServerError, gin.H{"error": "Failed to get users"})
+    return
   }
 
-// CreateUser creates a new user in database
+  c.JSON(http.StatusOK, users)
+}
+
+// CreateUser handles POST /users route
 func CreateUser(c *gin.Context) {
-  
-	// Validate input
-	var input CreateUserInput
-	if err := c.ShouldBindJSON(&input); err != nil {
-	  // Handle invalid input error
-	  c.AbortWithStatusJSON(http.StatusBadRequest, gin.H{"error": err.Error()})
-	  return
-	}
-  
-	// Create user in database
-	user := User{Name: input.Name, Email: input.Email}
-	if result := db.Create(&user); result.Error != nil {
-	  // Handle db error
-	  c.AbortWithStatusJSON(http.StatusInternalServerError, gin.H{"error": "Failed to create user"}) 
-	  log.Error(result.Error)
-	  return
-	}
-  
-	// Return response
-	c.JSON(http.StatusCreated, user)
+
+  // Bind input
+  var input CreateUserInput
+  if err := c.ShouldBindJSON(&input); err != nil {
+    c.AbortWithStatusJSON(http.StatusBadRequest, gin.H{"error": err.Error()}) 
+    return
   }
 
-// GetUser fetches a single user
-func GetUser(c *gin.Context) {
-  // get user id from url param
+  // Validate input
+  if !validateUserInput(input) {
+    c.AbortWithStatusJSON(http.StatusBadRequest, gin.H{"error": "Invalid input"})
+    return 
+  }
+
+  // Create user in database
+  user := User{Name: input.Name, Email: input.Email}
+  result := DB.Create(&user)
   
-  // fetch user from database
-  
-  // return response
+  // Handle errors
+  if result.Error != nil {
+    c.AbortWithStatusJSON(http.StatusInternalServerError, gin.H{"error": "Failed to create user"})
+    return
+  }
+
+  c.JSON(http.StatusCreated, user)
 }
 
-// UpdateUser updates a user
-func UpdateUser(c *gin.Context) {
-  // get user id from url param
+// Validate user input
+func validateUserInput(input CreateUserInput) bool {
+  // Input validation
   
-  // validate input 
-  
-  // update user in database
-  
-  // return response
-}
-
-// DeleteUser deletes a user
-func DeleteUser(c *gin.Context) {
-  // get user id from url param
-  
-  // delete user from database
-  
-  // return response
+  return true // or false
 }

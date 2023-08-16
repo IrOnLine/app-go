@@ -1,0 +1,126 @@
+openapi: 3.0.0
+info:
+  title: My API
+  description: RESTful API built with Golang, Gin and MySQL
+  version: 1.0.0
+
+servers:
+  - url: http://api.example.com
+    description: Production server
+  - url: http://localhost:8000
+    description: Local development server
+
+paths:
+
+  /users:
+    get:
+      summary: Get all users
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:    
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+                
+    post:
+      summary: Create a new user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateUserInput'
+      responses:
+        201:
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User' 
+                
+  /users/{id}:
+    parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+    
+    get:
+      summary: Get a user
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+      
+    put:
+      summary: Update a user
+      requestBody:  
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateUserInput'
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema: 
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: User updated successfully
+                    
+    delete:
+      summary: Delete a user
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema: 
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: User deleted successfully
+      
+components:
+  schemas:
+  
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        email:
+          type: string
+      
+    CreateUserInput:
+      type: object
+      required:
+        - name
+        - email
+      properties:
+        name:
+          type: string
+        email:
+          type: string
+        
+    UpdateUserInput:
+      type: object
+      properties:
+        name:
+          type: string
+        email:
+          type: string
