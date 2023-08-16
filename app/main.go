@@ -1,18 +1,29 @@
 package main
 
 import (
-	"gin.com/gin/controllers"
-	"gin.com/gin/models"
+	"app/controllers"
 	"github.com/gin-gonic/gin"
+	"net/http"
 )
 
 func main() {
-	r := gin.Default()
-	models.ConnectDatabase()
+	r := setupRouter()
+	_ = r.Run(":8080")
+}
 
-	r.GET("/api/tasks", controllers.FindTasks)
-	r.POST("/api/tasks", controllers.CreateTask)
-	r.GET("/api/tasks/one", controllers.FindTask)
-	r.PUT("/api/tasks/update", controllers.UpdateTask)
-	r.Run()
+func setupRouter() *gin.Engine {
+	r := gin.Default()
+
+	r.GET("ping", func(c *gin.Context) {
+		c.JSON(http.StatusOK, "pong")
+	})
+
+	userRepo := controllers.New()
+	r.POST("/users", userRepo.CreateUser)
+	r.GET("/users", userRepo.GetUsers)
+	r.GET("/users/:id", userRepo.GetUser)
+	r.PUT("/users/:id", userRepo.UpdateUser)
+	r.DELETE("/users/:id", userRepo.DeleteUser)
+
+	return r
 }
