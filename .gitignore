@@ -1,2 +1,3 @@
 /db/mysql/**
 /logs/*.log
+/app/*.exe
