@@ -1,30 +1,25 @@
 package main
 
 import (
-	"app/controllers"
-	"github.com/gin-gonic/gin"
-	"github.com/joho/godoten"
+	"fmt"
+	"log"
 	"net/http"
 )
 
-func main() {
-	r := setupRouter()
-	_ = r.Run(":8080")
+// handleHello GET /hello
+func handleHello(w http.ResponseWriter, r *http.Request) {
+
+	log.Println(r.Method, r.RequestURI)
+
+	// Returns hello world! as a response
+	fmt.Fprintln(w, "Hello world!")
 }
 
-func setupRouter() *gin.Engine {
-	r := gin.Default()
-
-	r.GET("ping", func(c *gin.Context) {
-		c.JSON(http.StatusOK, "pong")
-	})
-
-	userRepo := controllers.New()
-	r.POST("/users", userRepo.CreateUser)
-	r.GET("/users", userRepo.GetUsers)
-	r.GET("/users/:id", userRepo.GetUser)
-	r.PUT("/users/:id", userRepo.UpdateUser)
-	r.DELETE("/users/:id", userRepo.DeleteUser)
-
-	return r
+func main() {
+	// registers handleHello to GET /hello
+	http.HandleFunc("/hello", handleHello)
+	// starts the server on port 5000
+	if err := http.ListenAndServe(":5000", nil); err != nil {
+		log.Fatalln(err)
+	}
 }

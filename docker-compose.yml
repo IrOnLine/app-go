@@ -21,7 +21,7 @@ services:
       dockerfile: Dockerfile-go    
 # Exposes the port 5000 from a container and binds it to a random port
     ports:
-      - "5000"
+      - ${APP_PORT}
 # Перезапускать контейнер всегда
     restart: "always"
 # Соединяем API к сети irol-network bridge
@@ -47,10 +47,10 @@ services:
       - irol-network
 # Определяем переменные в контейнере
     environment:
-      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-    #  MYSQL_USER: ${MYSQL_USER}
-    #  MYSQL_PASSWORD: ${MYSQL_PASSWORD}
-      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+    #  MYSQL_USER: ${DB_USER}
+    #  MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
     command: --init-file /tmp/init.sql
     volumes:
       - ./db/init.sql:/tmp/init.sql

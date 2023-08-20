@@ -128,3 +128,36 @@ Version: '11.0.3-MariaDB-1:11.0.3+maria~ubu2204-log'  socket: '/run/mysqld/mysql
 
 2023-08-16 10:45:29 0 [Warning] mariadbd: io_uring_queue_init() failed with ENOSYS: check seccomp filters, and the kernel version (newer than 5.1 required)
 2023-08-16 10:45:29 0 [Warning] InnoDB: liburing disabled: falling back to innodb_use_native_aio=OFF
+2023-08-19 23:30:26 0 [Note] Starting MariaDB 11.0.3-MariaDB-1:11.0.3+maria~ubu2204-log source revision 70905bcb9059dcc40db3b73bc46a36c7d40f1e10 as process 1
+2023-08-19 23:30:26 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-08-19 23:30:26 0 [Note] InnoDB: Number of transaction pools: 1
+2023-08-19 23:30:26 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-08-19 23:30:26 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-08-19 23:30:26 0 [Note] InnoDB: Using liburing
+2023-08-19 23:30:26 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-08-19 23:30:26 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-08-19 23:30:26 0 [Note] InnoDB: Buffered log writes (block size=512 bytes)
+2023-08-19 23:30:26 0 [Note] InnoDB: End of log at LSN=66042
+2023-08-19 23:30:26 0 [Note] InnoDB: Opened 3 undo tablespaces
+2023-08-19 23:30:26 0 [Note] InnoDB: 128 rollback segments in 3 undo tablespaces are active.
+2023-08-19 23:30:26 0 [Note] InnoDB: Setting file './ibtmp1' size to 12.000MiB. Physically writing the file full; Please wait ...
+2023-08-19 23:30:27 0 [Note] InnoDB: File './ibtmp1' size is now 12.000MiB.
+2023-08-19 23:30:27 0 [Note] InnoDB: log sequence number 66042; transaction id 61
+2023-08-19 23:30:27 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-08-19 23:30:27 0 [Note] Plugin 'wsrep-provider' is disabled.
+2023-08-19 23:30:27 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2023-08-19 23:30:27 0 [Note] InnoDB: Buffer pool(s) load completed at 230819 23:30:27
+2023-08-19 23:30:27 0 [Note] Server socket created on IP: '0.0.0.0'.
+2023-08-19 23:30:27 0 [Note] Server socket created on IP: '::'.
+ERROR: 1396  Operation CREATE USER failed for 'irol_user'@'localhost'
+2023-08-19 23:30:28 0 [Note] mariadbd: ready for connections.
+Version: '11.0.3-MariaDB-1:11.0.3+maria~ubu2204-log'  socket: '/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
+2023-08-19 23:34:19 0 [Note] mariadbd (initiated by: unknown): Normal shutdown
+2023-08-19 23:34:19 0 [Note] InnoDB: FTS optimize thread exiting.
+2023-08-19 23:34:19 0 [Note] InnoDB: Starting shutdown...
+2023-08-19 23:34:19 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+2023-08-19 23:34:19 0 [Note] InnoDB: Buffer pool(s) dump completed at 230819 23:34:19
+2023-08-19 23:34:19 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+2023-08-19 23:34:19 0 [Note] InnoDB: Shutdown completed; log sequence number 66042; transaction id 64
+2023-08-19 23:34:19 0 [Note] mariadbd: Shutdown complete
+

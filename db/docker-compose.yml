@@ -1,0 +1,42 @@
+# docker-compose up -d
+version: '3'
+ 
+services:
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_ROOT_HOST: ${DB_HOST}
+    ports:
+      - "3306:3306"
+# открываем порт контейнера      
+    expose: 
+      - "3306"  
+    volumes:
+      - ./init.sql:/tmp/init.sql
+      - ./mysql/:/var/lib/mysql/
+      - ./my.cnf:/etc/mysql/my.cnf:ro
+      - ./mysql/:/var/log/mysql/
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: pma
+    links:
+      - mariadb
+    environment:
+      PMA_HOST: mariadb
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+    restart: always
+    ports:
+      - 8080:80
+    expose:
+      - "3306"  
+
+
+
+
