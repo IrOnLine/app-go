@@ -1,5 +1,7 @@
 # !!! --compatibility  для запуска реплик !!!
 # docker-compose --compatibility up -d
+# для запуска mariadb с открытым localhost:
+# docker-compose run --service-ports mariadb
 version: '3.9'
 
 # Определяем сеть
@@ -58,9 +60,8 @@ services:
       - ./db/my.cnf:/etc/mysql/my.cnf:ro
       - ./logs/mysql/:/var/log/mysql/
 # Раскомментировать, если открываем порт:
-    #ports:
-    #  - '3306:3306'
-
+    ports:
+      - '3306:3306'
 # Создаём контейнер phpMyAdmin
   phpmyadmin:
 # Используем образ phpMyAdmin

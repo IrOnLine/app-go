@@ -37,23 +37,21 @@ func Load() {
 }
 
 // Database connects to DB and validates connection
-func Database() (*gorm.DB, error) {
-	// Build DSN
-	dsn := os.Getenv("DB_USER") + ":" + os.Getenv("DB_PASSWORD") + "@tcp(" + os.Getenv("DB_HOST") + ":" + os.Getenv("DB_PORT") + ")/" + os.Getenv("DB_NAME") + "?charset=utf8mb4&parseTime=True&loc=Local"
+//func Database() (*gorm.DB, error) {
+// Build DSN
+//	dsn := os.Getenv("DB_USER") + ":" + os.Getenv("DB_PASSWORD") + "@tcp(" + os.Getenv("DB_HOST") + ":" + os.Getenv("DB_PORT") + ")/" + os.Getenv("DB_NAME") + "?charset=utf8mb4&parseTime=True&loc=Local"
 
-	// Open database connection
-	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
-	if err != nil {
-		return nil, err
-	}
-
-	// Validate database connection
-	if err = db.Ping(); err != nil {
-		return nil, errors.New("Failed to connect to database")
-	}
-
-	return db, nil
-}
+// Open database connection
+//	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
+//	if err != nil {
+//		return nil, err
+//	}
+// Validate database connection
+//	if err = db.Ping(); err != nil {
+//		return nil, errors.New("Failed to connect to database")
+//	}
+//	return db, nil
+//}
 
 //func connectDB() *gorm.DB {
 //	var err error

@@ -1,4 +1,5 @@
 # docker-compose up -d
+# docker-compose run --service-ports mariadb
 version: '3'
  
 services:
