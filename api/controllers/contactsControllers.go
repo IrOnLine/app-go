@@ -2,8 +2,8 @@ package controllers
 
 import (
 	"encoding/json"
-	"app/models"
-	u "app/utils"
+	"api/models"
+	u "api/utils"
 	"net/http"
 )
 

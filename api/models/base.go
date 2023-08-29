@@ -3,7 +3,6 @@ package models
 import (
 	"fmt"
 	"github.com/jinzhu/gorm"
-	//	_ "github.com/jinzhu/gorm/dialects/postgres"
 	"github.com/joho/godotenv"
 	_ "gorm.io/driver/mysql"
 	"os"
