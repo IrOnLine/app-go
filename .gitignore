@@ -1,3 +1,7 @@
 /db/mysql/**
 /logs/*.log
+<<<<<<< HEAD
 api/*.exe
+=======
+/app/*.exe
+>>>>>>> 47172802b447f5ac2e3932d29896191dc44a302e
