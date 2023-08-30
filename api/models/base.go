@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"github.com/jinzhu/gorm"
 	"github.com/joho/godotenv"
+	//"gorm.io/driver/mysql"
+	//"gorm.io/gorm"
 	_ "gorm.io/driver/mysql"
 	"os"
 )
@@ -24,8 +26,9 @@ func init() {
 	dbPort := os.Getenv("db_port")
 
 	dsn := username + ":" + password + "@tcp(" + dbHost + ":" + dbPort + ")/" + dbName + "?charset=utf8mb4&parseTime=True&loc=Local"
+	//dsn := os.Getenv("db_user") + ":" + os.Getenv("db_pass") + "@tcp(" + os.Getenv("db_host") + ":" + os.Getenv("db_port") + ")/" + os.Getenv("db_name") + "?charset=utf8mb4&parseTime=True&loc=Local"
 	fmt.Println(dsn)
-	//	conn, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
+	//	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	conn, err := gorm.Open("mysql", dsn)
 
 	//	dbUri := fmt.Sprintf("host=%s user=%s dbname=%s sslmode=disable password=%s", dbHost, username, dbName, password)
