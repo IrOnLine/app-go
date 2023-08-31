@@ -1,7 +1,7 @@
 package app
 
 import (
-	u "api/utils"
+	u "app/utils"
 	"net/http"
 )
 

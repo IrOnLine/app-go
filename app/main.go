@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 	"github.com/gorilla/mux"
-	"api/app"
-	"api/controllers"
+	"app/app"
+	"app/controllers"
 	"net/http"
 	"os"
 )
