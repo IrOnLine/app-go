@@ -404,3 +404,767 @@ Version: '11.0.3-MariaDB-1:11.0.3+maria~ubu2204-log'  socket: '/run/mysqld/mysql
 2023-08-29 20:51:54 0 [Note] InnoDB: Shutdown completed; log sequence number 229165; transaction id 294
 2023-08-29 20:51:54 0 [Note] mariadbd: Shutdown complete
 
+2023-08-31 12:24:37 0 [Note] Starting MariaDB 11.1.2-MariaDB-1:11.1.2+maria~ubu2204-log source revision 9bc25d98209df6810f7a7d5e7dd3ae677a313ab5 as process 1
+2023-08-31 12:24:37 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-08-31 12:24:37 0 [Note] InnoDB: Number of transaction pools: 1
+2023-08-31 12:24:37 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-08-31 12:24:37 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-08-31 12:24:37 0 [Note] InnoDB: Using liburing
+2023-08-31 12:24:37 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-08-31 12:24:37 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-08-31 12:24:37 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-08-31 12:24:37 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-08-31 12:24:37 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-08-31 12:24:37 0 [Note] InnoDB: Starting shutdown...
+2023-08-31 12:24:38 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-08-31 12:24:38 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-08-31 12:24:38 0 [Note] Plugin 'wsrep-provider' is disabled.
+2023-08-31 12:24:38 0 [ERROR] Could not open mysql.plugin table: "Table 'mysql.plugin' doesn't exist". Some plugins may be not loaded
+2023-08-31 12:24:38 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-08-31 12:24:38 0 [ERROR] Aborting
+2023-08-31 12:24:53 0 [Note] Starting MariaDB 11.1.2-MariaDB-1:11.1.2+maria~ubu2204-log source revision 9bc25d98209df6810f7a7d5e7dd3ae677a313ab5 as process 1
+2023-08-31 12:24:53 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-08-31 12:24:53 0 [Note] InnoDB: Number of transaction pools: 1
+2023-08-31 12:24:53 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-08-31 12:24:53 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-08-31 12:24:53 0 [Note] InnoDB: Using liburing
+2023-08-31 12:24:53 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-08-31 12:24:53 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-08-31 12:24:53 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-08-31 12:24:53 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-08-31 12:24:53 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-08-31 12:24:53 0 [Note] InnoDB: Starting shutdown...
+2023-08-31 12:24:53 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-08-31 12:24:53 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-08-31 12:24:53 0 [Note] Plugin 'wsrep-provider' is disabled.
+2023-08-31 12:24:53 0 [ERROR] Could not open mysql.plugin table: "Table 'mysql.plugin' doesn't exist". Some plugins may be not loaded
+2023-08-31 12:24:53 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-08-31 12:24:53 0 [ERROR] Aborting
+2023-08-31 12:26:19 0 [Note] Starting MariaDB 11.1.2-MariaDB-1:11.1.2+maria~ubu2204-log source revision 9bc25d98209df6810f7a7d5e7dd3ae677a313ab5 as process 55
+2023-08-31 12:26:19 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-08-31 12:26:19 0 [Note] InnoDB: Number of transaction pools: 1
+2023-08-31 12:26:19 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-08-31 12:26:19 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-08-31 12:26:19 0 [Note] InnoDB: Using liburing
+2023-08-31 12:26:19 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-08-31 12:26:19 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-08-31 12:26:19 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-08-31 12:26:19 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-08-31 12:26:19 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-08-31 12:26:19 0 [Note] InnoDB: Starting shutdown...
+2023-08-31 12:26:19 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-08-31 12:26:19 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-08-31 12:26:19 0 [Note] Plugin 'wsrep-provider' is disabled.
+2023-08-31 12:26:19 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-08-31 12:26:19 0 [ERROR] Aborting
+2023-09-05 21:05:36 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:05:36 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:05:36 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:05:36 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:05:37 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:05:37 0 [Note] InnoDB: Using liburing
+2023-09-05 21:05:37 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:05:37 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:05:37 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:05:37 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:05:37 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:05:37 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:05:37 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:05:37 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:05:37 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:05:37 0 [ERROR] Aborting
+2023-09-05 21:06:09 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:06:09 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:06:09 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:06:09 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:06:09 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:06:09 0 [Note] InnoDB: Using liburing
+2023-09-05 21:06:09 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:06:09 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:06:09 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:06:09 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:06:09 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:06:09 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:06:09 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:06:09 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:06:09 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:06:09 0 [ERROR] Aborting
+2023-09-05 21:06:42 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 56
+2023-09-05 21:06:42 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:06:42 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:06:42 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:06:42 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:06:42 0 [Note] InnoDB: Using liburing
+2023-09-05 21:06:42 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:06:42 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:06:42 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:06:42 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:06:42 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:06:42 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:06:42 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:06:42 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:06:42 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:06:42 0 [ERROR] Aborting
+2023-09-05 21:07:43 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:07:43 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:07:44 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:07:44 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:07:44 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:07:44 0 [Note] InnoDB: Using liburing
+2023-09-05 21:07:44 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:07:44 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:07:44 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:07:44 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:07:44 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:07:44 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:07:44 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:07:44 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:07:44 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:07:44 0 [ERROR] Aborting
+2023-09-05 21:08:16 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:08:16 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:08:16 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:08:16 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:08:16 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:08:16 0 [Note] InnoDB: Using liburing
+2023-09-05 21:08:16 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:08:16 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:08:16 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:08:16 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:08:16 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:08:16 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:08:16 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:08:16 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:08:16 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:08:16 0 [ERROR] Aborting
+2023-09-05 21:08:49 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 54
+2023-09-05 21:08:49 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:08:49 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:08:49 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:08:49 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:08:49 0 [Note] InnoDB: Using liburing
+2023-09-05 21:08:49 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:08:49 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:08:49 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:08:49 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:08:49 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:08:49 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:08:49 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:08:49 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:08:49 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:08:49 0 [ERROR] Aborting
+2023-09-05 21:09:22 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:09:22 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:09:22 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:09:22 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:09:22 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:09:22 0 [Note] InnoDB: Using liburing
+2023-09-05 21:09:22 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:09:22 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:09:22 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:09:22 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:09:22 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:09:22 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:09:22 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:09:22 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:09:22 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:09:22 0 [ERROR] Aborting
+2023-09-05 21:10:13 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:10:13 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:10:13 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:10:13 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:10:13 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:10:13 0 [Note] InnoDB: Using liburing
+2023-09-05 21:10:13 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:10:13 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:10:13 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:10:13 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:10:13 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:10:13 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:10:13 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:10:13 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:10:13 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:10:13 0 [ERROR] Aborting
+2023-09-05 21:10:45 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:10:45 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:10:45 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:10:45 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:10:45 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:10:45 0 [Note] InnoDB: Using liburing
+2023-09-05 21:10:45 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:10:45 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:10:45 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:10:45 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:10:45 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:10:45 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:10:45 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:10:45 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:10:45 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:10:45 0 [ERROR] Aborting
+2023-09-05 21:11:18 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:11:18 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:11:18 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:11:18 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:11:18 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:11:18 0 [Note] InnoDB: Using liburing
+2023-09-05 21:11:18 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:11:18 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:11:18 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:11:18 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:11:18 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:11:18 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:11:18 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:11:18 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:11:18 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:11:18 0 [ERROR] Aborting
+2023-09-05 21:11:50 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:11:50 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:11:50 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:11:50 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:11:50 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:11:50 0 [Note] InnoDB: Using liburing
+2023-09-05 21:11:50 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:11:50 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:11:50 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:11:50 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:11:50 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:11:50 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:11:51 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:11:51 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:11:51 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:11:51 0 [ERROR] Aborting
+2023-09-05 21:12:23 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:12:23 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:12:23 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:12:23 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:12:23 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:12:23 0 [Note] InnoDB: Using liburing
+2023-09-05 21:12:23 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:12:23 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:12:23 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:12:23 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:12:23 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:12:23 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:12:23 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:12:23 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:12:23 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:12:23 0 [ERROR] Aborting
+2023-09-05 21:12:46 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:12:46 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:12:46 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:12:46 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:12:46 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:12:46 0 [Note] InnoDB: Using liburing
+2023-09-05 21:12:46 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:12:46 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:12:46 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:12:46 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:12:46 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:12:46 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:12:46 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:12:46 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:12:46 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:12:46 0 [ERROR] Aborting
+2023-09-05 21:13:18 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:13:18 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:13:18 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:13:18 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:13:18 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:13:18 0 [Note] InnoDB: Using liburing
+2023-09-05 21:13:18 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:13:19 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:13:19 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:13:19 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:13:19 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:13:19 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:13:19 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:13:19 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:13:19 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:13:19 0 [ERROR] Aborting
+2023-09-05 21:14:20 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:14:20 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:14:20 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:14:20 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:14:20 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:14:20 0 [Note] InnoDB: Using liburing
+2023-09-05 21:14:20 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:14:20 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:14:20 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:14:20 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:14:20 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:14:20 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:14:20 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:14:20 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:14:20 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:14:20 0 [ERROR] Aborting
+2023-09-05 21:14:52 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:14:52 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:14:52 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:14:52 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:14:52 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:14:52 0 [Note] InnoDB: Using liburing
+2023-09-05 21:14:52 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:14:52 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:14:52 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:14:52 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:14:52 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:14:52 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:14:52 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:14:52 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:14:53 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:14:53 0 [ERROR] Aborting
+2023-09-05 21:16:09 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:16:09 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:16:09 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:16:09 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:16:09 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:16:09 0 [Note] InnoDB: Using liburing
+2023-09-05 21:16:09 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:16:09 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:16:09 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:16:09 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:16:09 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:16:09 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:16:09 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:16:09 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:16:09 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:16:09 0 [ERROR] Aborting
+2023-09-05 21:16:42 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:16:42 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:16:42 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:16:42 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:16:42 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:16:42 0 [Note] InnoDB: Using liburing
+2023-09-05 21:16:42 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:16:42 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:16:42 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:16:42 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:16:42 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:16:42 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:16:42 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:16:42 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:16:42 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:16:42 0 [ERROR] Aborting
+2023-09-05 21:19:20 0 [Note] Starting MariaDB 11.1.2-MariaDB-1:11.1.2+maria~ubu2204-log source revision 9bc25d98209df6810f7a7d5e7dd3ae677a313ab5 as process 55
+2023-09-05 21:19:20 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:19:20 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:19:20 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:19:20 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:19:20 0 [Note] InnoDB: Using liburing
+2023-09-05 21:19:20 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:19:20 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:19:20 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:19:20 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:19:20 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:19:20 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:19:20 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:19:20 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:19:20 0 [Note] Plugin 'wsrep-provider' is disabled.
+2023-09-05 21:19:20 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:19:20 0 [ERROR] Aborting
+2023-09-05 21:19:53 0 [Note] Starting MariaDB 11.1.2-MariaDB-1:11.1.2+maria~ubu2204-log source revision 9bc25d98209df6810f7a7d5e7dd3ae677a313ab5 as process 55
+2023-09-05 21:19:53 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:19:53 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:19:53 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:19:53 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:19:53 0 [Note] InnoDB: Using liburing
+2023-09-05 21:19:53 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:19:53 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:19:53 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:19:53 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:19:53 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:19:53 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:19:53 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:19:53 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:19:53 0 [Note] Plugin 'wsrep-provider' is disabled.
+2023-09-05 21:19:53 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:19:53 0 [ERROR] Aborting
+2023-09-05 21:20:25 0 [Note] Starting MariaDB 11.1.2-MariaDB-1:11.1.2+maria~ubu2204-log source revision 9bc25d98209df6810f7a7d5e7dd3ae677a313ab5 as process 55
+2023-09-05 21:20:25 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:20:25 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:20:25 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:20:25 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:20:25 0 [Note] InnoDB: Using liburing
+2023-09-05 21:20:25 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:20:25 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:20:25 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:20:25 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:20:25 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:20:25 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:20:26 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:20:26 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:20:26 0 [Note] Plugin 'wsrep-provider' is disabled.
+2023-09-05 21:20:26 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:20:26 0 [ERROR] Aborting
+2023-09-05 21:20:58 0 [Note] Starting MariaDB 11.1.2-MariaDB-1:11.1.2+maria~ubu2204-log source revision 9bc25d98209df6810f7a7d5e7dd3ae677a313ab5 as process 55
+2023-09-05 21:20:58 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:20:58 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:20:58 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:20:58 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:20:58 0 [Note] InnoDB: Using liburing
+2023-09-05 21:20:58 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:20:58 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:20:58 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:20:58 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:20:58 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:20:58 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:20:58 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:20:58 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:20:58 0 [Note] Plugin 'wsrep-provider' is disabled.
+2023-09-05 21:20:58 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:20:58 0 [ERROR] Aborting
+2023-09-05 21:21:31 0 [Note] Starting MariaDB 11.1.2-MariaDB-1:11.1.2+maria~ubu2204-log source revision 9bc25d98209df6810f7a7d5e7dd3ae677a313ab5 as process 54
+2023-09-05 21:21:31 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:21:31 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:21:31 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:21:31 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:21:31 0 [Note] InnoDB: Using liburing
+2023-09-05 21:21:31 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:21:31 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:21:31 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:21:31 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:21:31 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:21:31 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:21:31 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:21:31 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:21:31 0 [Note] Plugin 'wsrep-provider' is disabled.
+2023-09-05 21:21:31 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:21:31 0 [ERROR] Aborting
+2023-09-05 21:22:03 0 [Note] Starting MariaDB 11.1.2-MariaDB-1:11.1.2+maria~ubu2204-log source revision 9bc25d98209df6810f7a7d5e7dd3ae677a313ab5 as process 55
+2023-09-05 21:22:03 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:22:03 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:22:03 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:22:03 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:22:03 0 [Note] InnoDB: Using liburing
+2023-09-05 21:22:03 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:22:03 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:22:03 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:22:03 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:22:03 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:22:03 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:22:04 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:22:04 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:22:04 0 [Note] Plugin 'wsrep-provider' is disabled.
+2023-09-05 21:22:04 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:22:04 0 [ERROR] Aborting
+2023-09-05 21:22:36 0 [Note] Starting MariaDB 11.1.2-MariaDB-1:11.1.2+maria~ubu2204-log source revision 9bc25d98209df6810f7a7d5e7dd3ae677a313ab5 as process 55
+2023-09-05 21:22:36 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:22:36 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:22:36 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:22:36 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:22:36 0 [Note] InnoDB: Using liburing
+2023-09-05 21:22:36 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:22:36 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:22:36 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:22:36 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:22:36 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:22:36 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:22:36 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:22:36 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:22:36 0 [Note] Plugin 'wsrep-provider' is disabled.
+2023-09-05 21:22:36 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:22:36 0 [ERROR] Aborting
+2023-09-05 21:23:50 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 56
+2023-09-05 21:23:50 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:23:50 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:23:50 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:23:50 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:23:50 0 [Note] InnoDB: Using liburing
+2023-09-05 21:23:50 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:23:50 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:23:50 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:23:50 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:23:50 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:23:50 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:23:50 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:23:50 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:23:50 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:23:50 0 [ERROR] Aborting
+2023-09-05 21:24:22 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:24:22 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:24:22 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:24:22 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:24:22 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:24:22 0 [Note] InnoDB: Using liburing
+2023-09-05 21:24:22 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:24:22 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:24:22 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:24:22 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:24:22 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:24:22 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:24:23 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:24:23 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:24:23 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:24:23 0 [ERROR] Aborting
+2023-09-05 21:24:55 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:24:55 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:24:55 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:24:55 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:24:55 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:24:55 0 [Note] InnoDB: Using liburing
+2023-09-05 21:24:55 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:24:55 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:24:55 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:24:55 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:24:55 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:24:55 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:24:55 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:24:55 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:24:55 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:24:55 0 [ERROR] Aborting
+2023-09-05 21:25:28 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:25:28 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:25:28 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:25:28 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:25:28 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:25:28 0 [Note] InnoDB: Using liburing
+2023-09-05 21:25:28 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:25:28 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:25:28 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:25:28 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:25:28 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:25:28 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:25:28 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:25:28 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:25:28 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:25:28 0 [ERROR] Aborting
+2023-09-05 21:25:49 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:25:49 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:25:49 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:25:49 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:25:49 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:25:49 0 [Note] InnoDB: Using liburing
+2023-09-05 21:25:49 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:25:49 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:25:49 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:25:49 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:25:49 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:25:49 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:25:50 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:25:50 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:25:50 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:25:50 0 [ERROR] Aborting
+2023-09-05 21:26:22 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:26:22 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:26:22 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:26:22 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:26:22 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:26:22 0 [Note] InnoDB: Using liburing
+2023-09-05 21:26:22 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:26:22 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:26:22 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:26:22 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:26:22 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:26:22 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:26:22 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:26:22 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:26:22 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:26:22 0 [ERROR] Aborting
+2023-09-05 21:27:31 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:27:31 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:27:31 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:27:31 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:27:31 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:27:31 0 [Note] InnoDB: Using liburing
+2023-09-05 21:27:31 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:27:31 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:27:31 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:27:31 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:27:31 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:27:31 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:27:31 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:27:31 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:27:31 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:27:31 0 [ERROR] Aborting
+2023-09-05 21:28:04 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:28:04 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:28:04 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:28:04 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:28:04 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:28:04 0 [Note] InnoDB: Using liburing
+2023-09-05 21:28:04 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:28:04 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:28:04 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:28:04 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:28:04 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:28:04 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:28:04 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:28:04 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:28:04 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:28:04 0 [ERROR] Aborting
+2023-09-05 21:28:36 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:28:36 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:28:36 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:28:36 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:28:36 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:28:36 0 [Note] InnoDB: Using liburing
+2023-09-05 21:28:36 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:28:36 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:28:36 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:28:36 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:28:36 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:28:36 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:28:36 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:28:36 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:28:36 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:28:36 0 [ERROR] Aborting
+2023-09-05 21:29:09 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:29:09 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:29:09 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:29:09 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:29:09 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:29:09 0 [Note] InnoDB: Using liburing
+2023-09-05 21:29:09 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:29:09 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:29:09 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:29:09 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:29:09 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:29:09 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:29:09 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:29:09 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:29:09 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:29:09 0 [ERROR] Aborting
+2023-09-05 21:30:22 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:30:22 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:30:22 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:30:22 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:30:22 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:30:22 0 [Note] InnoDB: Using liburing
+2023-09-05 21:30:22 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:30:22 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:30:22 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:30:22 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:30:22 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:30:22 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:30:22 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:30:22 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:30:22 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:30:22 0 [ERROR] Aborting
+2023-09-05 21:31:13 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:31:13 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:31:13 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:31:13 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:31:13 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:31:13 0 [Note] InnoDB: Using liburing
+2023-09-05 21:31:13 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:31:13 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:31:13 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:31:13 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:31:13 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:31:13 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:31:13 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:31:13 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:31:13 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:31:13 0 [ERROR] Aborting
+2023-09-05 21:31:45 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:31:45 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:31:45 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:31:45 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:31:45 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:31:45 0 [Note] InnoDB: Using liburing
+2023-09-05 21:31:45 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:31:45 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:31:45 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:31:45 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:31:45 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:31:45 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:31:45 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:31:45 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:31:45 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:31:45 0 [ERROR] Aborting
+2023-09-05 21:32:22 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:32:22 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:32:22 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:32:22 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:32:22 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:32:22 0 [Note] InnoDB: Using liburing
+2023-09-05 21:32:22 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:32:22 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:32:22 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:32:22 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:32:22 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:32:22 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:32:22 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:32:22 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:32:22 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:32:22 0 [ERROR] Aborting
+2023-09-05 21:32:55 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:32:55 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:32:55 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:32:55 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:32:55 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:32:55 0 [Note] InnoDB: Using liburing
+2023-09-05 21:32:55 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:32:55 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:32:55 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:32:55 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:32:55 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:32:55 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:32:55 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:32:55 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:32:55 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:32:55 0 [ERROR] Aborting
+2023-09-05 21:33:27 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 56
+2023-09-05 21:33:27 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:33:27 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:33:27 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:33:27 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:33:27 0 [Note] InnoDB: Using liburing
+2023-09-05 21:33:27 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:33:27 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:33:27 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:33:27 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:33:27 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:33:27 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:33:27 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:33:27 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:33:27 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:33:27 0 [ERROR] Aborting
+2023-09-05 21:34:00 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:34:00 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:34:00 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:34:00 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:34:00 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:34:00 0 [Note] InnoDB: Using liburing
+2023-09-05 21:34:00 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:34:00 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:34:00 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:34:00 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:34:00 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:34:00 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:34:00 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:34:00 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:34:00 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:34:00 0 [ERROR] Aborting
+2023-09-05 21:34:38 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 56
+2023-09-05 21:34:38 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:34:38 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:34:38 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:34:38 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:34:38 0 [Note] InnoDB: Using liburing
+2023-09-05 21:34:38 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:34:38 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:34:38 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:34:38 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:34:38 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:34:38 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:34:38 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:34:38 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:34:38 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:34:38 0 [ERROR] Aborting
+2023-09-05 21:35:11 0 [Note] Starting MariaDB 10.11.5-MariaDB-1:10.11.5+maria~ubu2204-log source revision 7875294b6b74b53dd3aaa723e6cc103d2bb47b2c as process 55
+2023-09-05 21:35:11 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-09-05 21:35:11 0 [Note] InnoDB: Number of transaction pools: 1
+2023-09-05 21:35:11 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-09-05 21:35:11 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-09-05 21:35:11 0 [Note] InnoDB: Using liburing
+2023-09-05 21:35:11 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-09-05 21:35:11 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-09-05 21:35:11 0 [ERROR] InnoDB: MySQL-8.0 tablespace in ./ibdata1
+2023-09-05 21:35:11 0 [ERROR] InnoDB: Restart in MySQL for migration/recovery.
+2023-09-05 21:35:11 0 [ERROR] InnoDB: Plugin initialization aborted with error Unsupported
+2023-09-05 21:35:11 0 [Note] InnoDB: Starting shutdown...
+2023-09-05 21:35:11 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-09-05 21:35:11 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-09-05 21:35:11 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-09-05 21:35:11 0 [ERROR] Aborting

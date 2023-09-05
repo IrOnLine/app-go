@@ -1,5 +1,6 @@
 # !!! --compatibility  для запуска реплик !!!
 # docker-compose --compatibility up -d
+# флаг -d для деблокировки консоли
 # для запуска mariadb с открытым localhost:
 # docker-compose run --service-ports mariadb
 version: '3.9'
@@ -53,6 +54,8 @@ services:
     #  MYSQL_USER: ${DB_USER}
     #  MYSQL_PASSWORD: ${DB_PASSWORD}
       MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_ROOT_HOST: ${DB_HOST}
+      MARIADB_AUTO_UPGRADE: 'false'
     command: --init-file /tmp/init.sql
     volumes:
       - ./db/init.sql:/tmp/init.sql
@@ -62,6 +65,7 @@ services:
 # Раскомментировать, если открываем порт:
     ports:
       - '3306:3306'
+
 # Создаём контейнер phpMyAdmin
   phpmyadmin:
 # Используем образ phpMyAdmin
