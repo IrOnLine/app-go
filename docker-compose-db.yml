@@ -1,26 +1,30 @@
 # 
-# docker-compose -f docker-compose-no-app.yml up -d
+# docker-compose -f docker-compose-db.yml up -d
 # docker-compose run --service-ports mariadb -d
-# docker run -d --rm --network="host" -p 3306:3306 -h 127.0.0.1 -e MYSQL_ROOT_PASSWORD=irol_root_pw --name mariadb mariadb:lts
+# docker run -d --rm --network="host" -p 3306:3306 -h 127.0.0.1 -e MYSQL_ROOT_PASSWORD=irol_root_pw -v /db/init.sql:/tmp/init.sql -v /db/mariadb/data:/var/lib/mysql/data -v /logs/mariadb:/var/lib/mysql/logs --name mariadb mariadb:lts
+# docker run -d --rm -p 3306:3306 -e MYSQL_ROOT_PASSWORD=irol_root_pw -v /db/init.sql:/tmp/init.sql -v /db/mariadb/data:/var/lib/mysql/data -v /logs/mariadb:/var/lib/mysql/logs --name mariadb mariadb:lts
 version: '3'
 
 services:
   mariadb:
     image: mariadb:lts
     restart: always
+    env_file: '.env'
     environment:
-      MYSQL_ROOT_PASSWORD: irol_root_pw
-      MYSQL_USER:  irol 
-      MYSQL_PASSWORD: irol_pw
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
 #      MYSQL_ROOT_HOST: localhost
       MARIADB_AUTO_UPGRADE: 'false'
     expose:
-        - "3306"
+        - ${DB_PORT}
     ports:
-        - "3306:3306"
+        - "${DB_PORT}:3306"
+    command: --init-file /tmp/init.sql
     volumes: 
-      - "./mariadb/data:/var/lib/mysql/data/"
-      - "./mariadb/logs:/var/lib/mysql/logs/"
+      - "./db/init.sql:/tmp/init.sql"
+      - "./db/mariadb/data:/var/lib/mysql/data/"
+      - "./logs/mariadb:/var/lib/mysql/logs/"
               
   phpmyadmin:
     image: phpmyadmin
