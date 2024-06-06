@@ -1,15 +1,20 @@
 package main
 
 import (
+	"app/app"
+	"app/config"
+	"app/controllers"
 	"fmt"
 	"github.com/gorilla/mux"
-	"app/app"
-	"app/controllers"
+	"github.com/joho/godotenv"
+	log "github.com/sirupsen/logrus"
 	"net/http"
 	"os"
 )
 
 func main() {
+	// Load environment variables
+	config.Load()
 
 	router := mux.NewRouter()
 
